@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../Weather/main.css">
+    <link rel="stylesheet" href="../Weather/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header-logo">
+            <a href="#" class="header-logo__item">Weather</a>
+        </div>
+        <div class="header-searchform">
+            <form class="header-form">
+                <input class="header-form-input" type="search" placeholder=" Выберите город" aria-label="Search">
+                <button class="header-form-btn" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <button class="header-switch-btn" type="button">C° / F°</button>          
+    </header>
+    
+    <main>        
+        <section class="weather">
+
+            <div class="weather-city-container">
+
+                <span class="weather-city__title">Ярославль</span>
+                <div class="weather-city-info">
+                    <span class="weather-city__weekday">Понедельник</span>
+                    <span class="weather-city__time">7:00</span>
+                </div>
+                <span class="weather-city__weather-value">24°C</span>
+
+            </div>
+
+            <div class="weather-feature-container">
+
+                <div class="weather-feature">
+                    <div class="weather-feature__time wmf">8:00</div>
+                    <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
+                    <div class="weather-feature__temp wmf">25°C</div>
+                </div>
+            
+                <div class="weather-feature">
+                    <div class="weather-feature__time wmf">9:00</div>
+                    <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
+                    <div class="weather-feature__temp wmf">24°C</div>
+                </div>
+
+                <div class="weather-feature">
+                    <div class="weather-feature__time wmf">10:00</div>
+                    <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
+                    <div class="weather-feature__temp wmf">26°C</div>
+                </div>
+            
+                <div class="weather-feature">
+                    <div class="weather-feature__time wmf">11:00</div>
+                    <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
+                    <div class="weather-feature__temp wmf">24°C</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="now">
+
+            <div class="now-title">Сейчас</div>
+            
+            <div class="now-parametrs-container">
+
+                <div class="now-parametrs__item">
+                    <h3 class="now-parameters__title">Вероятноcть дождя</h3>
+                    <span class="now-parameters__value">12%</span>
+                </div>
+
+                <div class="now-parametrs__item">
+                    <h3 class="now-parameters__title">Влажность</h3>
+                    <span class="now-parameters__value">60%</span>
+                </div>
+
+                <div class="now-parametrs__item">
+                    <h3 class="now-parameters__title">Скорость ветра</h3>
+                    <span class="now-parameters__value">10 км/ч</span>
+                </div>
+
+                <div class="now-parametrs__item">
+                    <h3 class="now-parameters__title">Видимость</h3>
+                    <span class="now-parameters__value">100 км</span>
+                </div>
+
+                <div class="now-parametrs__item">
+                    <h3 class="now-parameters__title">Давление</h3>
+                    <span class="now-parameters__value">1015 рс</span>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section class="weather-table">
+
+            <table class="weather-table-container">
+
+                <tr>
+                    <th>День</th>
+                    <th>Вероятноcть дождя</th>
+                    <th>Влажность</th>
+                    <th>Ветер</th>
+                    <th>Температура</th>              
+                </tr>
+                <tr>
+                    <td>Понедельник</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Вторник</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Среда</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Четверг</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Пятница</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Суббота</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+                <tr>
+                    <td>Воскресенье</td>
+                    <td>9 %</td>
+                    <td>57 %</td>
+                    <td>10 км/ч</td>
+                    <td>19°</td>                    
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+</body>
+</html>
