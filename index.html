@@ -12,7 +12,7 @@
     <meta property="og:url" content="">
     <meta property="og:image" content="">
 
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="./manifest.json">
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +24,8 @@
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
     <meta name="theme-color" content="#fafafa">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -51,22 +53,22 @@
                     <span class="weather-city__weekday">Понедельник</span>
                     <span class="weather-city__time">7:00</span>
                 </div>
-                <span class="weather-city__weather-value">24°C</span>
+                <span class="weather-city__weather-value" id="dataTemp">24°C</span>
 
             </div>
 
             <div class="weather-feature-container">
 
                 <div class="weather-feature">
-                    <div class="weather-feature__time wmf">8:00</div>
+                    <div class="weather-feature__time wmf" id="dataTime1">8:00</div>
                     <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
-                    <div class="weather-feature__temp wmf">25°C</div>
+                    <div class="weather-feature__temp wmf" id="dataTemp1">25°C</div>
                 </div>
             
                 <div class="weather-feature">
-                    <div class="weather-feature__time wmf">9:00</div>
+                    <div class="weather-feature__time wmf" id="dataTime2">9:00</div>
                     <img src="./img/rain.png" alt="rain" class="weather-feature__icon">
-                    <div class="weather-feature__temp wmf">24°C</div>
+                    <div class="weather-feature__temp wmf" id="dataTemp2">24°C</div>
                 </div>
 
                 <div class="weather-feature">
@@ -186,5 +188,8 @@
         </section>
 
     </main>
+
+    <script src="./js.js"></script>
+    
 </body>
 </html>
